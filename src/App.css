@@ -1,38 +1,235 @@
-.App {
-  text-align: center;
+body, html, h1, h2, h3, h4, p, section, div, footer, header{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+aside, article, section, header, footer, nav {
+    display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+    background: rgba(72, 164, 255, 0.1);
+    height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    width: 960px;
+    margin: 0 auto;
+    background: white;
+    height: 940px;
 }
 
-.App-link {
-  color: #61dafb;
+#root{
+    height: 100%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* App styles */
+
+.App{
+    height: 100%;
 }
+
+.wrapper{
+    min-height:100%;
+    margin-bottom: -140px;
+}
+
+header{
+    background: black;
+    color: blue;
+    text-align: center;
+    padding: 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    height: 50px;
+}
+
+.push{
+    height: 140px;
+}
+
+footer{
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    height: 140px;
+    color: white;
+}
+
+footer h3{
+    padding-bottom: 20px;
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+
+/* Main_Page styles */
+
+.video{
+    width: 700px;
+    margin: 30px auto;
+    height: 200px;
+    background: rgba(255, 144, 226, 0.38);
+    border-top-left-radius: 100rem;
+    border-bottom-right-radius: 100rem;
+}
+
+.video h2{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.video a{
+    display: inline;
+    margin: auto;
+}
+
+.video img{
+    display: inline;
+    width: 100px;
+    margin: 20px 300px;
+    box-shadow: 0 0 10px 10px;
+}
+
+.video img:hover{
+    box-shadow: crimson 0 0 10px 10px;
+}
+
+.categories{
+    width: 700px;
+    margin: 30px auto;
+    height: 400px;
+    /*background: rgba(255, 209, 94, 0.52);*/
+}
+
+.word-category{
+    margin: 20px;
+    height: 344px;
+    width: 294px;
+    background: rgba(255, 148, 30, 0.69);
+    border: 8px solid black;
+}
+
+.word-category:hover{
+    background: rgba(127, 255, 0, 0.69);
+    cursor: pointer;
+}
+
+.word-category h3{
+    font-size: 2em;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.word-category img{
+    width: 294px;
+}
+
+/* Food_Page styles */
+
+.Food_Page h2{
+    font-size: 3em;
+    /*padding: 20px 100px 20px;*/
+    padding: 10px 30px 20px;
+    text-decoration: underline;
+}
+
+.word {
+    list-style-type: none;
+}
+
+.word h3{
+    font-size: 2em;
+}
+
+.word  h3:hover{
+    font-size: 2em;
+    color: rgba(127, 255, 0, 0.62);
+    text-shadow: black 1px 1px;
+    cursor: pointer;
+}
+
+.word p{
+    border: orangered solid 2px;
+    padding: 10px;
+    background: rgba(255, 165, 0, 0.48);
+    color: brown;
+    border-radius: 12px;
+    font-size: 1.5em;
+    width: 50%;
+    margin: 20px;
+    text-align: center;
+}
+
+button{
+    background: rgba(255, 144, 226, 0.38);
+    border: none;
+    border-radius: 200rem;
+    margin: 20px;
+    box-shadow: blue -1px 1px 10px 10px;
+    font-size: 2em;
+    width: 30px;
+    height: 180px;
+}
+
+button:hover{
+    box-shadow: crimson 0 0 10px 10px;
+}
+
+
+
+/* Universal classes */
+
+.flex-wrapper{
+    display: flex;
+}
+
+
+
+/*.App {*/
+/*  text-align: center;*/
+/*}*/
+
+/*.App-logo {*/
+/*  height: 40vmin;*/
+/*  pointer-events: none;*/
+/*}*/
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*  .App-logo {*/
+/*    animation: App-logo-spin infinite 20s linear;*/
+/*  }*/
+/*}*/
+
+/*.App-header {*/
+/*  background-color: #282c34;*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  font-size: calc(10px + 2vmin);*/
+/*  color: white;*/
+/*}*/
+
+/*.App-link {*/
+/*  color: #61dafb;*/
+/*}*/
+
+/*@keyframes App-logo-spin {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/
